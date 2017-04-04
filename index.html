@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/recicla2.jpg','imagenes/contamina.jpg','imagenes/preventivas.jpg','imagenes/consec2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CONTAMINACION DE MI ENTORNO</h1>
+</div>
+<div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>DEFINICION</h2>
+ <p>Se muestra como se define:</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TIPOS DE CONTAMINACION</h2>
+<p>Se muestran los tipos de contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONSECUENCIAS DE LA CONTAMINACION</h2>
+<p>Muestra las consecuencias de la contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>RECICLAJE</h2>
+<p>Muestra informacion sobre el reciclaje</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>MEDIDAS PREVENTIVAS</h2>
+ <p>Muestra medidas que previenen la contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONTAMINACION DE MI ENTORNO</h2>
+ <p>Muestra propuesta para combatir la contaminación</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+ <img src="imagenes/logo.jpg" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Tres</h4>
+<h4>Viridiana Cortez Diaz</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>DEFINICION</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso.El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).
+<p> Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</p></h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>CONTAMINACION AMBIENTAL</h2>
+<div>
+<p>Se muestra la imagen de contaminación: </p>
+<br>
+</div>
+<div>
+</div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contaminacion','','imagenes/contamina.jpg',1)"><img src="imagenes/contamina2.jpg" width="643" height="352" id="contaminacion"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion tres,VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TIPOS DE CONTAMINACION</h1>
+</div>
+ <div data-role="content" align="center">
+<div>
+<h2>Los diferentes tipos de contaminación que existen son:</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION DEL AGUA</h1>
+<div>
+<p>La incorporación al agua de materias extrañas, como microorganismos, productos químicos, residuos industriales, y de otros tipos o aguas residuales.<br>
+</p></div>
+<div>
+  <p><img src="imagenes/agua.jpg" width="468" height="294" alt="agua"></p> 
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION ACUSTICA</h1>
+<div>
+<p>Hace referencia al ruido (entendido como sonido excesivo y molesto), provocado por las actividades humanas (tráfico, industrias, locales de ocio, aviones,barcos, entre otros.)<br>
+</p></div>
+<div>
+  <P><img src="imagenes/acustica.jpg" width="468" height="294" alt="acustico"></P>
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION LUMÍNICA</h1>
+<div>
+<p>Refiere al brillo o resplandor de luz en el cielo nocturno producido por la reflexión y la difusión de la luz artificial en los gases y en las partículas del aire.<br>
+</p></div>
+<div>
+  <P><img src="imagenes/luminica.jpg" width="468" height="294" alt="luminosa"></P>
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION TÉRMICA</h1>
+<div>
+<p>Refiere a la emisión de fluidos a elevada temperatura; se puede producir en cursos de agua.<br>
+</p></div>
+<div>
+ <P><img src="imagenes/termica.jpg" width="468" height="294" alt="termica"></P>
+</div>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION DEL AIRE</h1>
+<div>
+<p>La adición dañina a la atmósfera de gases tóxicos, CO, u otros que afectan el normal desarrollo de plantas, animales.<br>
+</p></div>
+<div>
+  <P><img src="imagenes/aire.jpg" width="468" height="294" alt="luminosa"></P>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CONTAMINACION DEL SUELO</h1>
+<div>
+<p>La incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos industriales.<br>
+</p></div>
+<div>
+<P><img src="imagenes/suelo.jpg" width="468" height="294" alt="suelo"></P>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres,VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>CONSECUENCIAS DE LA CONTAMINACION</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>Algunas de las consecuencias de la contaminación son:</h2>
+   <p>Problemas para la salud.</p>
+   <p>Debilitamiento de la capa de ozono.</p>
+   <p>La contaminación afecta al suelo y al agua.</p>
+   <p>La contaminación afecta al clima.</p>
+   <p>Respirar el aire contaminado esto afecta nuestra salud cardiovascular.</p>
+   <p>La destrucción del ozono estratosférico y esto provoca el calentamiento global.</p>
+   <p>Convierte en un elemento no consumible al agua.</p>
+   <p>En los suelos contaminados no sea posible la siembra.</p>
+   <p>Genera daños físicos en los individuos.</p>
+   <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>CONSECUENCIAS</h2>
+<div>
+</div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('consecuencia','','imagenes/consec2.jpg',1)"><img src="imagenes/consec.jpg" width="610" height="373" id="consecuencia"></a></p>
+</div>
+</div>
+</div>
+</div>
+ <div data-role="footer" data-theme="a" data-position="fixed"> <h4>Aplicacion Tres,VCD</h4>
+</div>
+</div>
+   
+   
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>RECICLAJE</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2><a href="http://www.ecologiaverde.com" target="_self">REGLA DE LAS TRES ERRES</a></h2>
+ <p>Es un proceso cuyo objetivo es convertir desechos en nuevos productos o en materia para su posterior utilización.</p>
+ <p>RECICLA:es una manera de aprovechar los materiales, sin embargo hay que recordar que al reciclar se gasta energía y se contamina al reprocesar. La mayoría de todos los materiales que usamos pueden ser reciclados y usados en otras aplicaciones</p>
+ <p>REDUCE:Se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios. Disminuir la cantidad de recursos que utilizamos por medio de otros hábitos y/o técnicas; por ejemplo no pedir bolsas en los supermercados a menos que sea necesario, reducir el consumo de papel etc..</p>
+ <p>REUTILIZA:La mayoría de los materiales que usamos día a día pueden ser reutilizados de alguna manera: imprimir el papel por los dos lados, reutilizar la madera de tarimas, donar libros, aparatos eléctricos etc.</p>
+ <div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>TRES ERRES</h2>
+<div>
+</div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('recicla','','imagenes/recicla2.jpg',1)"><img src="imagenes/recicla.jpg" width="390" height="315" id="recicla"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres,VCD</h4>
+</div>
+</div>
+ 
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>MEDIDAS PREVENTIVAS</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Para prevenir la contaminación debemos tomar en cuenta lo siguiente:</h2>
+<p>*No tomes baños ni duchas de agua caliente muy largos.</p> 
+<p>*No uses la luz ni los electrodomésticos mucho tiempo.</p>
+<p>*Reutiliza, recicla, y haz abono</p>
+<p>*Compra productos locales.</p>
+<p>*Sé un productor.</p>
+<p>*Pero si conduces, mantén tu auto en buenas condiciones</p>
+<p>*Trata de caminar o ir en bicicleta.</p>
+<p>*Menos basura</p>
+<p>*No desperdiciar agua</p>
+<p>No quemar la basura</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>PREVENCION</h2>
+<div>
+</div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('prevencion','','imagenes/preventivas.jpg',1)"><img src="imagenes/preventi2.png" width="260" height="264" id="prevencion"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres,VCD</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CONTAMINACION DE MI ENTORNO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/colonia.jpg" alt="colonia" title="colonia" id="wows1_0"/></li>
+		<li><img src="data1/images/colonia2.jpg" alt="colonia2" title="colonia2" id="wows1_1"/></li>
+		<li><img src="data1/images/colonia3.jpg" alt="colonia3" title="colonia3" id="wows1_2"/></li>
+		<li><img src="data1/images/colonia4.jpg" alt="colonia4" title="colonia4" id="wows1_3"/></li>
+		<li><img src="data1/images/colonia5.jpg" alt="colonia5" title="colonia5" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/colonia6.jpg" alt="wow slider" title="colonia6" id="wows1_5"/></a></li>
+		<li><img src="data1/images/colonia7.jpg" alt="colonia7" title="colonia7" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="colonia"><span><img src="data1/tooltips/colonia.jpg" alt="colonia"/>1</span></a>
+		<a href="#" title="colonia2"><span><img src="data1/tooltips/colonia2.jpg" alt="colonia2"/>2</span></a>
+		<a href="#" title="colonia3"><span><img src="data1/tooltips/colonia3.jpg" alt="colonia3"/>3</span></a>
+		<a href="#" title="colonia4"><span><img src="data1/tooltips/colonia4.jpg" alt="colonia4"/>4</span></a>
+		<a href="#" title="colonia5"><span><img src="data1/tooltips/colonia5.jpg" alt="colonia5"/>5</span></a>
+		<a href="#" title="colonia6"><span><img src="data1/tooltips/colonia6.jpg" alt="colonia6"/>6</span></a>
+		<a href="#" title="colonia7"><span><img src="data1/tooltips/colonia7.jpg" alt="colonia7"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<h2>Visor de imagenes &quot;Contaminacion en Mi colonia&quot;:</h2>
+<p>Propuesta para combatir:</p>
+<p><a href="http://cascosverdes.org/es" target="_self">CASCOS VERDES</a></p>
+<p><a href="http://wwf.panda.org/es/" target="_self">FONDO MUNDIAL PARA LA NATURALEZA</a></p>
+<p>Lo que propongo es que tratemos de caminar o ir en bicicleta, con el propósito de evitar la contaminación en el aire debido al smog de los autos.</p>
+<p>Pero para mi colonia lo que haría sería concientizar a la gente acerca de tirar basura. Haría una platica donde hablara de los perros, ya que en la colonia hay muchos y dejan sus heces en la calle, por culpa de sus dueños que no se hacen responsable de ellos o decir que no tengan muchas mascotas y si lo van a hacer que se ocupen de ellos, por otra parte sería lo de las montoneras de basura, tratar de "ayudarnos" como vecinos para que todos lleven su basura al camión. Y platicar de las consecuencias al ambiente.</p>
+
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion tres,VCD</h4>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
